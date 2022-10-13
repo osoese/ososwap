@@ -49,13 +49,12 @@ export const getFarmApr = async (
     if (str.includes('egem')) APR = await getAPRwRUBY(farms[1], 0)
     else if (str.includes('tusd')) APR = await getAPRwRUBY(farms[3], 1)
     else if (str.includes('tosa')) APR = await getAPRwRUBY(farms[4], 1)
-  }
-  else {
-    if (str.includes('egem') && str.includes('tusd')) {
+  } else if (str.includes('egem') && str.includes('tusd')) {
       APR = await getAPRwoRUBY(farms[2], 0)
-    }
   }
   return APR
+  }
+  
   // const yearlyCakeRewardAllocation = RUBY_PER_YEAR.times(poolWeight)
   // const cakeRewardsApr = yearlyCakeRewardAllocation.times(cakePriceUsd).div(poolLiquidityUsd).times(100)
   // let cakeRewardsAprAsNumber = null
@@ -64,7 +63,7 @@ export const getFarmApr = async (
   // }
   // const lpRewardsApr = lpAprs[farmAddress?.toLocaleLowerCase()] ?? 0
   // return { cakeRewardsApr: cakeRewardsAprAsNumber, lpRewardsApr }
-}
+
 
 const getAPRwRUBY = async (farm, i) => {
   const lp = new web3.eth.Contract(pairAbi as AbiItem[], farm[0])

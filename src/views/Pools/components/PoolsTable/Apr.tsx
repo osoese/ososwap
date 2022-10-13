@@ -26,11 +26,11 @@ const Apr: React.FC<AprProps> = ({ pool, showIcon, performanceFee = 0, ...props 
       const aprValue = await getFarmApr('ruby')
       setApr(aprValue?.toString())
     }
-    else return setApr("")
+    else{ setApr("") }
   }
   useEffect(() => {
     getApr()
-  }, [sousId])
+  })
   // const [onPresentApyModal] = useModal(
   //   <ApyCalculatorModal
   //     tokenPrice={earningTokenPrice}

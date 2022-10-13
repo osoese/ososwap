@@ -31,12 +31,13 @@ const AprRow: React.FC<AprRowProps> = ({ pool, performanceFee = 0 }) => {
     if (sousId === 0) {
       const aprValue = await getFarmApr('ruby')
       setApr(aprValue?.toString())
+    } else {
+      setApr("")
     }
-    else return setApr("")
   }
   useEffect(() => {
     getApr()
-  }, [sousId])
+  })
   const [onPresentApyModal] = useModal(
     <ApyCalculatorModal
       tokenPrice={earningTokenPrice}

@@ -135,9 +135,9 @@ const Farms: React.FC = () => {
   const userDataReady = !account || (!!account && userDataLoaded)
 
   const [stakedOnly, setStakedOnly] = useState(!isActive)
-  useEffect(() => {
-    setStakedOnly(!isActive)
-  }, [isActive])
+  // useEffect(() => {
+  //   setStakedOnly(!isActive)
+  // }, [isActive])
 
   const activeFarms = farmsLP.filter((farm) => farm.pid !== 0 && farm.multiplier !== '0X' && !isArchivedPid(farm.pid))
   const inactiveFarms = farmsLP.filter((farm) => farm.pid !== 0 && farm.multiplier === '0X' && !isArchivedPid(farm.pid))
@@ -179,7 +179,7 @@ const Farms: React.FC = () => {
       }
       return farmsToDisplayWithAPR
     },
-    [cakePrice, query, isActive],
+    [query],
   )
 
   const handleChangeQuery = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -306,23 +306,23 @@ const Farms: React.FC = () => {
 
     return row
   })
-  useEffect(() => {
-    // console.log("mounted")
-    setInterval(() => {
-      const getApr = async () => {
-        // console.log(chosenFarmsMemoized)
-        const pAPRs = chosenFarmsMemoized.map(async (farm, index) => {
-          const aprValue = await getFarmApr(farm.lpSymbol)
-          // console.log(aprValue?.toString())
-          // rowData[index].apr.value = aprValue?.toString()
-          return aprValue?.toString()
-        })
-        const _APRs = await Promise.all(pAPRs)
-        setAPRs(_APRs)
-      }
-      getApr()
-    }, 5000)
-  }, [])
+  // useEffect(() => {
+  //   // console.log("mounted")
+  //   setInterval(() => {
+  //     const getApr = async () => {
+  //       // console.log(chosenFarmsMemoized)
+  //       const pAPRs = chosenFarmsMemoized.map(async (farm, index) => {
+  //         const aprValue = await getFarmApr(farm.lpSymbol)
+  //         // console.log(aprValue?.toString())
+  //         // rowData[index].apr.value = aprValue?.toString()
+  //         return aprValue?.toString()
+  //       })
+  //       const _APRs = await Promise.all(pAPRs)
+  //       setAPRs(_APRs)
+  //     }
+  //     getApr()
+  //   }, 5000)
+  // }, [])
   const renderContent = (): JSX.Element => {
     if (viewMode === ViewMode.TABLE && rowData.length) {
       const columnSchema = DesktopColumnSchema

@@ -476,7 +476,7 @@ export interface State {
   predictions: PredictionsState
   profile: ProfileState
   teams: TeamsState
-  collectibles: CollectiblesState
+  // collectibles: CollectiblesState
   voting: VotingState
   lottery: LotteryState
 }

@@ -34,10 +34,10 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Lottery')} | ${t('RubySwap')}`,
       }
-    case '/collectibles':
-      return {
-        title: `${t('Collectibles')} | ${t('RubySwap')}`,
-      }
+    // case '/collectibles':
+    //   return {
+    //     title: `${t('Collectibles')} | ${t('RubySwap')}`,
+    //   }
     case '/ifo':
       return {
         title: `${t('Initial Farm Offering')} | ${t('RubySwap')}`,
