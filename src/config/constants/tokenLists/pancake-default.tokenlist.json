@@ -11,17 +11,9 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "WEGEM Token",
+      "name": "Wrapped EGEM",
       "symbol": "WEGEM",
       "address": "0xE5fca20e55811D461800A853f444FBC6f5B72BEa",
-      "chainId": 1987,
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/egem.png"
-    },
-    {
-      "name": "GEMine Token",
-      "symbol": "GEM",
-      "address": "0xaf017fe9C9770BdbDA1A014D5D6c87B364225Cd0",
       "chainId": 1987,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/egem.png"
@@ -35,7 +27,7 @@
       "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/ruby.png"
     },
     {
-      "name": "WBNB",
+      "name": "Wrapped BNB",
       "symbol": "WBNB",
       "address": "0x97271a78C9778F226C1c4eFe63876c04f8cD8F40",
       "chainId": 1987,
@@ -49,6 +41,46 @@
       "chainId": 1987,
       "decimals": 18,
       "logoURI": "https://cryptologos.cc/logos/trueusd-tusd-logo.png?v=014"
+    },
+    {
+      "name": "Wrapped Matic",
+      "symbol": "WMATIC",
+      "address": "0x95e3D9C12C1a8bF3c80782283900FfE77fB8c295",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://cryptologos.cc/logos/matic-network-matic-logo.png?v=002"
+    },
+    {
+      "name": "Amethyst V1",
+      "symbol": "AME",
+      "address": "0x9ac3C3543Db12888938195F0b9c36872F3D64E9c",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://cdn.discordapp.com/attachments/1018907896886603806/1026820055029268530/unknown.png"
+    },
+    {
+      "name": "Amethyst V2",
+      "symbol": "AME2",
+      "address": "0x8D10fAED87BE16dC839b58A07e256A5314b589b0",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://cdn.discordapp.com/attachments/1018907896886603806/1026820055029268530/unknown.png"
+    },
+    {
+      "name": "Vancuta Defi",
+      "symbol": "VAND",
+      "address": "0x8c8df8720dE2239913A459A2Cd32261EC083059c",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": ""
+    },
+    {
+      "name": "BitCone",
+      "symbol": "CONE",
+      "address": "0x6ed056d4724770062406CE6F934ec173e9F5eb51",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": ""
     },
     {
       "name": "TOSA Inu",
@@ -65,6 +97,14 @@
       "chainId": 1987,
       "decimals": 18,
       "logoURI": "https://zebrocoin.info/assets/img/logo/zebrocoin_logo_256x256.png"
+    },
+    {
+      "name": "Liquidity Token",
+      "symbol": "GEM",
+      "address": "0xaf017fe9C9770BdbDA1A014D5D6c87B364225Cd0",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/egem.png"
     }
   ]
 }
