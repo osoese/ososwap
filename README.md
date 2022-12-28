@@ -6,6 +6,8 @@ basically:
 
 git clone
 
+git checkout develop-osoese
+
 yarn install
 
 yarn build
