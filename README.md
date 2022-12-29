@@ -10,13 +10,17 @@ git checkout develop-osoese
 
 yarn install
 
+yarn start
+
 yarn build
 
-I have the home page variable in package.json set to "./" but need to add the ifs hash part of the domain into the variable later
+I have the home page variable in package.json set to "./"
 
-here is a test build up that works
+and converted to hashrouter for use on ipfs
 
-https://ipfs.io/ipfs/QmfXheLUgPE4WrK9GpkUxyNFxEzyaRHaNtU8RruihspvHQ/
+here is a test build up that works (if you compile code from the previous commit hash d8feafe..d6fb62b  develop-osoese branch and build the project and load the build folder into ipfs it would be cool if you match this hash below)
+
+https://ipfs.io/ipfs/QmPN5pSUtxSuLxfz1NgHX9C5yvsnjTAx6JG4ahvCTKq499/
 
 more later (updated on 12/27/2022 at 7:51pm EDT)
 
