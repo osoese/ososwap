@@ -40,7 +40,7 @@
       "address": "0x33F4999ee298CAa16265E87f00e7A8671c01D870",
       "chainId": 1987,
       "decimals": 18,
-      "logoURI": "https://cryptologos.cc/logos/trueusd-tusd-logo.png?v=014"
+      "logoURI": "https://assets.coingecko.com/coins/images/3449/small/tusd.png"
     },
     {
       "name": "Wrapped Matic",
@@ -48,7 +48,15 @@
       "address": "0x95e3D9C12C1a8bF3c80782283900FfE77fB8c295",
       "chainId": 1987,
       "decimals": 18,
-      "logoURI": "https://cryptologos.cc/logos/matic-network-matic-logo.png?v=002"
+      "logoURI": "https://assets.coingecko.com/coins/images/14073/small/matic.png?1628852392"
+    },
+    {
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "address": "0xC99A0e60fB489Ab229140D0F5751916858Ab62C8",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"
     },
     {
       "name": "Amethyst V1",
@@ -80,7 +88,15 @@
       "address": "0x6ed056d4724770062406CE6F934ec173e9F5eb51",
       "chainId": 1987,
       "decimals": 18,
-      "logoURI": ""
+      "logoURI": "https://cdn.discordapp.com/attachments/559465961057681428/1049817037029003426/Bitcone_Logo.png"
+    },
+    {
+      "name": "datbear Capital",
+      "symbol": "BEIR",
+      "address": "0x7Fd4B3e33985bb93abC32A8Aa0839dAd0Ac1CB04",
+      "chainId": 1987,
+      "decimals": 18,
+      "logoURI": "https://user-images.githubusercontent.com/31746846/152697160-07aeaf3e-ee03-404d-82d6-01f7dd3670d6.png"
     },
     {
       "name": "TOSA Inu",
