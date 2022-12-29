@@ -1,5 +1,5 @@
-import React, { lazy, useEffect } from 'react'
-import { Router, Redirect, Route, Switch } from 'react-router-dom'
+import React, { lazy } from 'react'
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom'
 import { ResetCSS } from '@twinkykms/rubyswap-uikit'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
@@ -13,7 +13,6 @@ import SuspenseWithChunkError from './components/SuspenseWithChunkError'
 import { ToastListener } from './contexts/ToastsContext'
 import PageLoader from './components/Loader/PageLoader'
 import EasterEgg from './components/EasterEgg'
-import history from './routerHistory'
 // Views included in the main bundle
 import Pools from './views/Pools'
 import Swap from './views/Swap'
@@ -26,7 +25,7 @@ import RedirectOldRemoveLiquidityPathStructure from './views/RemoveLiquidity/red
 import { RedirectPathToSwapOnly, RedirectToSwap } from './views/Swap/redirects'
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
-const Home = lazy(() => import('./views/Home'))
+// const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const FarmAuction = lazy(() => import('./views/FarmAuction'))
 const Lottery = lazy(() => import('./views/Lottery'))
@@ -72,7 +71,7 @@ const App: React.FC = () => {
   usePollCoreFarmData()
   IconChanger()
   return (
-    <Router history={history}>
+    <HashRouter basename="/">
       <ResetCSS />
       <GlobalStyle />
       <Menu>
@@ -158,7 +157,7 @@ const App: React.FC = () => {
       <EasterEgg iterations={2} />
       <ToastListener />
       <DatePickerPortal />
-    </Router>
+    </HashRouter>
   )
 }
 
