@@ -20,7 +20,7 @@ and converted to hashrouter for use on ipfs
 
 here is a test build up that works (if you compile code from the previous commit hash d8feafe..d6fb62b  develop-osoese branch and build the project and load the build folder into ipfs it would be cool if you match this hash below)
 
-https://ipfs.io/ipfs/QmPN5pSUtxSuLxfz1NgHX9C5yvsnjTAx6JG4ahvCTKq499/
+https://ipfs.io/ipfs/QmWAGSenyU2WmFFiyVVsCsJnG4CcSqYUM1XijMPDfKF88z/
 
 more later (updated on 12/27/2022 at 7:51pm EDT)
 
